@@ -5,5 +5,6 @@ COPY createdb.sql /opt/
 COPY init.sh /opt/
 RUN chmod +x /opt/init.sh
 WORKDIR /opt
+ECHO "Hello!"
 ENTRYPOINT /opt/init.sh && /bin/sh
 
